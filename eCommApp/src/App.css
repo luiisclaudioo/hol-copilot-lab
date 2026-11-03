@@ -39,6 +39,24 @@
   transform: translateY(-2px);
 }
 
+.app-header nav .nav-link-button {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  border: none;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+
+.app-header nav .nav-link-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
 .main-content {
   flex: 1;
   display: flex;
@@ -382,6 +400,49 @@
 
 .checkout-modal-actions .cancel-btn {
     background-color: #ccc;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-form h2 {
+  margin: 0 0 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button,
+.contact-confirmation button {
+  padding: 0.5rem 1rem;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.contact-form button:hover,
+.contact-confirmation button:hover {
+  background-color: #5a6fd8;
+}
+
+.contact-confirmation p {
+  margin-bottom: 1rem;
 }
 
 .order-processed-container {
